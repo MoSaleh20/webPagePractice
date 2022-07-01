@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body class="container">
+    <head >
+        <h1>Survey Form</h1>
+    </head>
+    <form action="">
+        <table cellpadding = 10px>
+            <tr>
+                <td class="center" colspan="2">Let us know how we can improve freeCodeCamp</td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <label  for="name">Name</label>
+                </td>
+                <td class="right" >
+                <input type="text" class="textInput" placeholder="Enter your Name">
+                </td>
+            </tr>
+            <tr>
+                <td class="left" >
+                    <label  for="email">Email</label>
+                </td>
+                <td class="right">
+                    <input class="textInput"  type="email" placeholder="Enter your email">
+                </td>
+            </tr>
+            <tr>
+                <td class="left" >
+                    <label for="age">Age</label>
+                </td>
+                <td class="right">
+                    <input min="0" max="100" class="textInput"  type="number" name="age" id="age">
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <label   for="">Which option best descripes your current role?</label>
+                </td>
+                <td class="right">
+                    <select name="role" id="">
+                        <option value="student">Student</option>
+                        <option value="employee">Employee</option>
+                    </select>
+                </td>
+            </tr>
+            <tr >
+                <td class="left">
+                    How likely is that you would recommend freeCodeCamp to a friend?
+                </td>
+                <td colspan="1" class="right">
+                            <input type="radio" name="recommend" id="definitely">
+                            <label for="definitely">Difinitely</label>
+                            <div></div>
+                            <input type="radio" name="recommend" id="maybe">
+                            <label for="maybe">Maybe</label>
+                            <div></div>
+                            <input type="radio" name="recommend" id="notSure">
+                            <label for="notSure">Not Sure</label>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <label   for="">What do you like most in FCC:</label>
+                </td>
+                <td class="right"> 
+                    <select name="like" id="">
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="left" >
+                    <label  for="">Things that should be improved in the future (check all that apply)</label>
+                </td>
+                <td class="right">
+                    <input type="checkbox" name="improvments" id="front">
+                    <label for="">Front-end Projects</label>
+                    <div></div>
+                    <input type="checkbox" name="improvments" id="back">
+                    <label for="">Back-end Projects</label>
+                    <div></div>
+                    <input type="checkbox" name="improvments" id="data">
+                    <label for="">Data Visualization</label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
